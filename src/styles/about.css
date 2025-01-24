@@ -1,0 +1,127 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+header{
+    padding: 10px;
+    margin-left: 25px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(245, 38, 38);
+    transition: 0.3s ease;
+
+}
+.menu a:hover::after,
+.menu li.active a::after {
+   width: 100%;
+}
+.menu li.active{
+    font-weight: 500;
+}
+.menu li a:hover{
+    color: red;
+}
+section{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.bio-para {
+    margin-left: 67px;
+   padding: 10px; 
+   text-align: justify; 
+   word-wrap: break-word; 
+   line-height: 1.6; 
+}
+/* .menu-btn{
+    display: none;
+} */
+     @media screen and (orientation: portrait) {
+               section {
+                   display: flex;
+                   grid-template-columns: 1fr;
+                   flex-direction: column-reverse;
+               }
+               .bio-para, .webimg {
+                   margin: auto;
+               }
+               
+     }
+     #Education{
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0px 12px 0px;
+        font-size: 30px;
+     }
+     .clg-name{
+        margin-left: 600px;
+        text-align: justify; 
+        word-wrap: break-word; 
+        line-height: 1.6; 
+     }
+    .last{
+        display: flex;
+        justify-content: space-around;
+    }
+    .webimg {
+        text-align: center;
+    }
+     .webimg img {
+         border-radius: 100%;
+         width: 100%;
+         max-width: 350px;
+         height: auto;
+     }
+     .webimg img{
+        border-radius: 50%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border: 5px solid transparent;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        animation: border-animate 3s infinite linear;
+     }
+     @keyframes border-animate {
+           0% {
+                border-color: red;
+           }
+           25% {
+                border-color: blue;
+           }
+           50% {
+               border-color: green;
+           }
+           75% {
+               border-color: yellow;
+           }
+           100% {
+               border-color: red;
+           }
+      }  
+      footer{
+        height: auto;
+      }

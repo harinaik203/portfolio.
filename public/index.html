@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../src/styles/index.css">
+    <script src="../src/index.js"></script>
+     
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="logo">
+            <span class="portfo">Portfo</span>
+            <span class="lio">lio.</span>   
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="#"><button type="button"><span>Home</span></button></a></li>
+            <li><a href="#"><button type="button" onclick="aboutclick()"><span>About</span></button></a></li>
+            <li><a href="#"><button type="button" onclick="projectclick()"><span>Projects</span></button></a></li>
+        </ul>
+        <button class="menu-btn bi bi-list text-white d-lg-none" data-bs-toggle="modal" data-bs-target="#menuModal"></button>
+        <div class="modal fade d-lg-none" id="menuModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal_menu">
+                            <li onclick="homeclick()"><a href="#"><span>Home</span></a></li>
+                            <li><a href="about.html"><span>About</span></a></li>
+                            <li><a href="#" onclick="projectclick()"><span>Projects</span></a></li>
+                            <li><a href="#"><span>Contact</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="featured-container">
+            <div class="featuredtext">
+                <p>Transforming Ideas into Innovative <br> Web Applications with Code and Design.</p>
+            </div>
+            <div class="myimg">
+                <img src="./images/avatar.png" alt="Hari Naik">
+            </div>
+        </div>
+        <div>
+           <button class="homebtn">
+            <span class="resume" onclick="resumeopen()">Resume <span class="bi bi-box-arrow-in-up-right"></span></span>
+            <span class="contact" onclick="contactclick()">Contact <span class="bi bi-person-lines-fill"></span></span>
+           </button>
+          
+                
+        </div>
+    </section>
+    <footer>
+        <div class="socialicons">
+            <a href="#" class="bi bi-instagram" onclick="Instaclick()"></a>
+            <a href="#" class="bi bi-linkedin" onclick="linkedInclick()"></a>
+            <a href="#" class="bi bi-github" onclick="gitclick()"></a>
+        </div>
+        <hr>
+        <div class="last">
+            <span>
+             Made with <span class="bi bi-heart-fill text-danger"></span> by Hari.
+            </span>
+            <span>
+            <a href="#" class="text-white" onclick="helloclick()"> Say Hello. <span class="bi bi-emoji-smile"></span></a>
+            </span>
+          </div>
+    </footer>
+</body>
+</html>
