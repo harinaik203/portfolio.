@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hari Naik - Portfolio</title>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
@@ -11,59 +11,95 @@
     <script src="../src/about.js"></script>
 </head>
 <body class="container-fluid" onload="bodyload()">
-        <header>
+    <header>
+       
+            <div class="logo">
+                <span class="portfo">Portfo</span>
+                <span class="lio">lio.</span>   
+            </div>
+           <div>
             <ul class="menu">
-                <li onclick="homeclick()"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="#">About</a></li>
-                <li onclick="projectclick()"><a href="#">Projects</a></li>
-                <li onclick="contactclick()"><a href="#">Contact</a></li>
+                <li><a href="#" onclick="projectclick()">Projects</a></li>
             </ul>
-        </header>
-    </header>
-   <section>
-    <div class="biography">
-        <h2>BIOGRAPHY</h2>
-        <div class="bio-para">
-                <p>
-                    Hello! My name is Hari Naik, and I am a dedicated Frontend Developer with a strong foundation in both frontend and backend technologies. My journey in web development has been driven by a passion for building innovative, user-centric digital experiences that solve real-world problems.
-                </p>
-                <p>
-                    <b>Frontend Development:</b> Expertise in HTML, CSS, Bootstrap, Tailwind CSS and ReactJS to craft responsive and dynamic user interfaces. <br>
-                    <b>Backend Development:</b> Proficient in NodeJS, MongoDB, and SQL for creating robust and scalable server-side applications.
-                </p>
-                <p>
-                    Currently pursuing my degree in <b>Electronics and Communication Engineering at IIT Bhubaneswar.</b> Overall, I am a friendly and dedicated developer who is always eager to take on new challenges and exceed expectations. I look forward to working with you!
-                </p>
         </div>
-    </div>
-    <div class="webimg">
-        <img src="./images/photo copy.jpg" width="500px" height="500px">
-    </div>
-   </section>
-   <footer style="color: white;">
-    <div id="Education">
-        Education
-    </div>
-    <div class="text-center">
-        <b>Bachelor of Technology In Electronics and</b><br>
-        <b>Communication Engineering </b>(2022-2026). <br>
-       Indian Institute of Technology Bhubaneswar, <br>
-       Khurda, Odisha,India.
-    </p>
-    <p>
-       <b>12th Board</b> <br>
-       Andhra Pradesh Residential Junior college. <br>
-       Kurnool,Andhra Pradesh.
-    </div>
-    <hr>
-     <div class="last">
-       <span>
-        Made with <span class="bi bi-heart-fill text-danger"></span> by Hari.
-       </span>
-       <span>
-       <a href="#" class="text-white" onclick="helloclick()"> Say Hello. <span class="bi bi-emoji-smile text-white"></span></a>
-       </span>
-     </div>
-   </footer>
+           <button class="menu-btn bi bi-list text-white d-lg-none" data-bs-toggle="modal" data-bs-target="#menuModal"></button>
+        <div class="modal fade d-lg-none" id="menuModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-black" id="menuModalLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal_menu">
+                            <li onclick="homeclick()"><a href="#"><span>Home</span></a></li>
+                            <li><a href="about.html"><span>About</span></a></li>
+                            <li><a href="#" onclick="projectclick()"><span>Projects</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </header>
+
+    <section>
+        <div class="biography">
+            <h2>BIOGRAPHY</h2>
+            <div class="bio-para">
+                <p>Hello! I'm Hari Naik, a Frontend Web Developer with expertise in Frontend Development. I specialize in React, Next.js, Tailwind CSS, HTML, CSS, and JavaScript. My strong collaboration and problem-solving skills were developed through team projects, and I am highly motivated to apply my technical skills to new and exciting projects..</p>
+                <div class="college">
+                    <strong>B.Tech in Electronics & Communication Engineering</strong> (2022-2026)<br>
+                    Indian Institute of Technology Bhubaneswar, India
+                </div>
+                <div class="college">
+                    <strong>12th Board</strong><br>
+                    Andhra Pradesh Residential Junior College, Kurnool
+                </div>
+            </div>
+        </div>
+        <div class="webimg">
+            <img src="./images/photo copy.jpg" alt="Hari Naik">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2 class="skills">Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front" >HTML</div>
+                    <div class="card-back">CSS</div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front" >JavaScript</div>
+                    <div class="card-back">ReactJS</div>
+                </div>
+            </div>
+            <!-- <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">Nextjs</div>
+                    <div class="card-back">Tailwindcss</div>
+                </div>
+            </div> -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">NodeJS</div>
+                    <div class="card-back">MongoDB</div>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <span>Made with <span class="bi bi-heart-fill text-danger"></span> by Hari.</span>
+            <span><a href="#" class="text-white text-decoration-none">Say Hello <span class="bi bi-emoji-smile"></span></a></span>
+        </div>
+    </footer>
+
 </body>
 </html>

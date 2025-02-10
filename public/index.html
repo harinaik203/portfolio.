@@ -17,17 +17,19 @@
             <span class="portfo">Portfo</span>
             <span class="lio">lio.</span>   
         </div>
+       <div>
         <ul class="menu">
             <li class="active"><a href="#"><button type="button"><span>Home</span></button></a></li>
             <li><a href="#"><button type="button" onclick="aboutclick()"><span>About</span></button></a></li>
             <li><a href="#"><button type="button" onclick="projectclick()"><span>Projects</span></button></a></li>
         </ul>
+       </div>
         <button class="menu-btn bi bi-list text-white d-lg-none" data-bs-toggle="modal" data-bs-target="#menuModal"></button>
         <div class="modal fade d-lg-none" id="menuModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="menuModalLabel">Menu</h5>
+                        <h5 class="modal-title text-black" id="menuModalLabel">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -35,7 +37,7 @@
                             <li onclick="homeclick()"><a href="#"><span>Home</span></a></li>
                             <li><a href="about.html"><span>About</span></a></li>
                             <li><a href="#" onclick="projectclick()"><span>Projects</span></a></li>
-                            <li><a href="#"><span>Contact</span></a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -55,9 +57,7 @@
            <button class="homebtn">
             <span class="resume" onclick="resumeopen()">Resume <span class="bi bi-box-arrow-in-up-right"></span></span>
             <span class="contact" onclick="contactclick()">Contact <span class="bi bi-person-lines-fill"></span></span>
-           </button>
-          
-                
+           </button>       
         </div>
     </section>
     <footer>

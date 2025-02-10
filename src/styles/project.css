@@ -13,8 +13,7 @@ header {
 .logo {
     font-size: 2rem;
     color: white;
-    margin-left: 50px;
-    
+    margin-left: 170px;
 }
 
 .lio {
@@ -23,16 +22,15 @@ header {
 
 }
 .portfo{
-    color: blue;
+    font-weight: bold;
 }
 
 .menu {
     display: flex;
     gap: 2rem;
     list-style: none;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 250px 0px 0px;
     padding: 0;
-    
 
 }
 
@@ -68,9 +66,56 @@ header {
     border: none;
     color: white;
 }
+.modal-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.modal_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; 
+}
+
+.modal_menu li {
+    width: 100%;
+    text-align: center;
+}
+
+.modal_menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.modal_menu a:hover {
+    background-color: crimson;
+    color: white;
+    transform: scale(1.05);
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 24px;
+    background-color: black;
+    border: none;
+}
 
 .projects-section {
     padding: 2rem 0;
+    margin-right: 40px;
 }
 
 .project-card {
@@ -128,19 +173,71 @@ header {
 .project-link:hover {
     color: #fff;
 }
-
-@media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-        margin: 2rem 1rem;
-    }
+    @media screen and (orientation: portrait) {
+        .project-card {
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            margin: 1rem auto;
+            padding: 1rem;
+        }
     
-    .project-image {
-        max-width: 100%;
-        height: 250px;
+        .project-image {
+            width: 100%;
+            height: auto;
+        }
+    
+        .project-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        .project-info {
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .project-info p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+    
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #0ef;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #0ef;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+    
+        .project-link:hover {
+            background: #0ef;
+            color: black;
+        }
+        .menu {
+            display: none;
+        }
+    
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 40px;
+        }
     }
-
-    .project-info {
-        padding: 1.5rem;
-    }
-}

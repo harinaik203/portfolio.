@@ -5,16 +5,8 @@ html {
 body {
     background-color: black;
     font-family: sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
 }
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
-}
-
 .menu {
     display: flex;
     list-style: none;
@@ -74,8 +66,14 @@ section {
 
 @media screen and (orientation: portrait) {
     header {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 55px;
+    }
+    .logo{
+        position: absolute;
+        top: 20px;
+        right: 40px;
     }
 
     .menu {
@@ -95,10 +93,7 @@ section {
 }
 .portfo {
     font-size: 30px;
-    color: blue;
-}
-.logo{
-    margin-left: -18px;
+    font-weight: bold;
 }
 .featured-container {
     display: grid;
@@ -140,6 +135,10 @@ section {
 .socialicons a:hover {
     transform: scale(1.3);
 }
+.socialicons{
+    margin-top: -42px;
+}
+
 
 @media screen and (orientation: portrait) {
     .featured-container {
@@ -153,11 +152,11 @@ section {
     .myimg {
         margin-top: 30px;
     }
-    header{
-        display: flex;
-        flex-direction: row;
-    }
    
+}
+.modal-body {
+    text-align: center;
+    padding: 20px;
 }
 
 .modal_menu {
@@ -167,19 +166,33 @@ section {
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 15px; 
+}
+
+.modal_menu li {
+    width: 100%;
+    text-align: center;
 }
 
 .modal_menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
     text-decoration: none;
-    margin: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
 
 .modal_menu a:hover {
-    color: #ff0000;
+    background-color: crimson;
+    color: white;
+    transform: scale(1.05);
 }
-.modal_menu li.active a {
-    text-decoration: underline;
-}
+
 
 .homebtn .resume,
 .homebtn .contact {
@@ -209,16 +222,31 @@ section {
     .socialicons{
         margin-inline-start: 250px;
     }
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+    }
+    .logo{
+        margin-right: 60px;
+    }
 
 }
 @media screen and (orientation: portrait) {
     .homebtn {
       margin-left: 65px;
+      margin-bottom: 40px;
     }
     .socialicons{
         text-align: center;
     }
-
+    .menu-btn {
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        font-size: 24px;
+    }
 }
 .last{
     display: flex;
