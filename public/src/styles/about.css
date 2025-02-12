@@ -1,5 +1,4 @@
-
-   html {
+html {
     scroll-behavior: smooth;
 }
 
@@ -85,10 +84,10 @@ section {
     padding: 20px;
     border: 2px solid transparent; 
      padding: 10px 20px 0px 45px;
+     font-family: sans-serif;
 }
 
 .biography h2 {
-    font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
     background: linear-gradient(135deg, #ff416c, #ff4b2b);
@@ -107,12 +106,6 @@ section {
     width: 60px;
     height: 2px;
     background: red;
-}
-
-.bio-para {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #e0e0e0;
 }
 
 .college {
@@ -147,7 +140,6 @@ section {
 
 /* Skills section */
 .skills {
-    font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -237,6 +229,10 @@ section {
     }
     .webimg{
         margin-right: 240px;
+        margin-top: 96px;
+    }
+    .bi-list{
+        visibility: hidden;
     }
 
 
@@ -252,21 +248,20 @@ section {
         top: 15px;
         right: 40px;
     }
-
     .biography {
         text-align: center;
+        padding: 20px;
         order: 2;
         max-width: 100%;
-        padding: 10px;
-        margin: auto;
+        margin: 0 auto;
     }
+
     .bio-para {
-        font-size: 1rem; 
-        line-height: 1.6; 
-        max-width: 100%; 
-        padding: 10px 15px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: justify;
     }
     .webimg {
         order: 1;
@@ -364,4 +359,9 @@ section {
     background-color: black;
     border: none;
 }
-
+.sayhello{
+    color: white;
+}
+.bi-heart-fill{
+    color: red;
+}

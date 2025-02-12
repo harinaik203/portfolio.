@@ -87,12 +87,12 @@ section {
     }
 }
 .lio {
-    font-size: 27px;
+    font-size: 29px;
     color: #ff0000;
     margin-left: -4px;
 }
 .portfo {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
 }
 .featured-container {
@@ -145,13 +145,14 @@ section {
         grid-template-columns: 1fr;
     
     }
-    .featuredtext{
+    /* .featuredtext{
         text-align: center;
-    }
+        font-size: 1.3rem;
+    } */
 
-    .myimg {
-        margin-top: 30px;
-    }
+    /* .myimg {
+        margin-top: 10px;
+    } */
    
 }
 .modal-body {
