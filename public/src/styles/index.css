@@ -236,7 +236,7 @@ section {
 }
 @media screen and (orientation: portrait) {
     .homebtn {
-      margin-left: 65px;
+      margin-left: 61px;
       margin-bottom: 40px;
     }
     .socialicons{
