@@ -18,7 +18,7 @@ function Instaclick(){
     window.location.href="https://www.instagram.com/hari_naik_1/";
 }
 function resumeopen() {
-    window.open("./docs/Resume_Hari_Naik.pdf");
+    window.open("./docs/Resume_Hari_Naik..pdf");
 }
 function contactclick(){
     window.location.href = "mailto:harinaik9711@gmail.com";
