@@ -131,7 +131,7 @@ header {
 
 .project-image {
     flex: 1;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 .project-image img {
